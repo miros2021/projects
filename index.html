@@ -1,0 +1,63 @@
+<html>
+<head>
+<style>
+    div
+    {
+        width:60%;
+        height:80%;
+        background-color:#62dade;
+        //padding-top:4%;
+        margin-top:5%;
+        border-radius:25px;
+        border:3px red solid;
+    }
+#n1,#n2
+{
+    margin-bottom:5px;
+    width:50%;
+    height:20%;
+    border-radius:30px;
+    text-align:center;
+}
+#bt
+{
+     width:30%;
+    height:10%;
+    border-radius:25px;
+    background-color:Blue;
+font-size:25px;
+    color:White;
+}
+</style>
+<script>
+    var x = document.getElementById('n1').value;
+    var y = document.getElementById('n2').value;
+    function ok() {
+        if ((x = "abcd") && (y = 1234)) {
+            window.location = "home.html";
+        }
+        else {
+            alert("error");
+        }
+    }
+</script>
+</head>
+<body>
+<center>
+
+<div>
+<fieldset>
+<legend>login ..</legend>
+
+<h3>enter your adress</h3>
+ <input type="text" id="n1" placeholder="enter your user name" /><br />
+ <h3>enter your password</h3>
+ <input type="password" id="n2" placeholder="enter your password"  /><br />
+<input type="submit" value="enter" id="bt" onclick="ok();"/>
+</fieldset>
+</div>
+</center>
+
+
+</body>
+</html>
